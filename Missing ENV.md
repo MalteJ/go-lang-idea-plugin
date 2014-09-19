@@ -33,14 +33,14 @@ Please note that ```/etc/launchd.conf``` does not exist by default, so you will 
 
 ```bash
 setenv GOROOT /usr/local/go
-setenv GOPATH /Users/yourname/go
+setenv GOPATH ~/go
 ```
 
 if setenv returns "Command not found" then the launchctrl command can be used:
 
 ```zsh
 launchctl setenv GOROOT /usr/local/go
-launchctl setenv GOPATH /Users/yourname/go
+launchctl setenv GOPATH ~/go
 ```
 
 It's possible to apply these changes [without a restart](http://stackoverflow.com/a/3756686/15677). 
